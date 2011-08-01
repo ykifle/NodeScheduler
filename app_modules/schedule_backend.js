@@ -109,7 +109,6 @@ var schedule_be = {
       };
       Event.find(eventQuery, function(err, events) {
         events.forEach(function(event) {
-          //console.log(event);
           eventList.push(event);
         });
         callback(eventList);
