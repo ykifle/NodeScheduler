@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Datepicker - Default functionality</title>
+	<link rel='stylesheet' type='text/css' href='/css/fullcalendar/fullcalendar.css' />
+	<link rel='stylesheet' type='text/css' href='/css/fullcalendar/fullcalendar.print.css' media='print' />
+	<link rel='stylesheet' type='text/css' href='/css/jquery-ui/themes/south-street/jquery-ui-1.8.14.custom.css' />
+	<link rel='stylesheet' type='text/css' href='/css/global.css' />
+	<script type='text/javascript' src="/js/jquery/jquery-1.5.2.min.js"></script>
+	<script type='text/javascript' src='/js/jquery-ui/jquery-ui-1.8.14.custom.min.js'></script>
+	<script type='text/javascript' src="/js/jquery-ui/jquery.ui.core.js"></script>
+	<script type='text/javascript' src="/js/jquery-ui/jquery.ui.widget.js"></script>
+	<script type='text/javascript' src="/js/jquery-ui/jquery.ui.datepicker.js"></script>
+	<script type='text/javascript' src='/js/fullcalendar/fullcalendar.js'></script>
+	<script type='text/javascript'>
+	$(document).ready(function() {
+		$( ".datepicker" ).datepicker();
+	});
+	</script>
+</head>
+<body>
+
+<form id="schedForm" name="schedForm" action="schedule_action" method="get">
+<input type="text" id="datepicker" class="datepicker">
+<input type="text" id="datepicker2" class="datepicker">
+</form>
+
+
+
+<div class="demo-description">
+<p>The datepicker is tied to a standard form input field.  Focus on the input (click, or use the tab key) to open an interactive calendar in a small overlay.  Choose a date, click elsewhere on the page (blur the input), or hit the Esc key to close. If a date is chosen, feedback is shown as the input's value.</p>
+</div><!-- End demo-description -->
+
+</body>
+</html>

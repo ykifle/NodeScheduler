@@ -5,12 +5,12 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title>Scheduler</title>
-	<link rel='stylesheet' type='text/css' href='/css/fullcalendar.css' />
-	<link rel='stylesheet' type='text/css' href='/css/fullcalendar.print.css' media='print' />
+	<link rel='stylesheet' type='text/css' href='/css/fullcalendar/fullcalendar.css' />
+	<link rel='stylesheet' type='text/css' href='/css/fullcalendar/fullcalendar.print.css' media='print' />
 	<link rel='stylesheet' type='text/css' href='/css/global.css' />
-	<script type='text/javascript' src='/js/jquery-1.5.2.min.js'></script>
-	<script type='text/javascript' src='/js/jquery-ui-1.8.11.custom.min.js'></script>
-	<script type='text/javascript' src='/js/fullcalendar.js'></script>
+	<script type='text/javascript' src='/js/jquery/jquery-1.5.2.min.js'></script>
+	<script type='text/javascript' src='/js/jquery-ui/jquery-ui-1.8.14.custom.min.js'></script>
+	<script type='text/javascript' src='/js/fullcalendar/fullcalendar.js'></script>
 	<script type='text/javascript'>
 	$(document).ready(function() {
 		var date = new Date();
@@ -22,7 +22,8 @@
 				{
 					url: 'http://127.0.0.1:1338/api/events',
 					type: 'GET',
-					dataType: 'json'
+					dataType: 'json',
+					ignoreTimezone: false
 				}
             ]
 	    });
@@ -32,6 +33,9 @@
 </head>
 
 <body>
-  <div id='calendar'></div>
+	<div>
+		<a href='/create.html'>Create New</a>
+	</div>
+	<div id='calendar'></div>
 </body>
 </html>
